@@ -16,8 +16,20 @@
         <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-5" value="&lt;div&gt;Role -&amp;nbsp;&lt;br&gt;if mail starts in the form of&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;lt;digit&amp;gt;&amp;lt;digit&amp;gt;b&amp;lt;c|d|e&amp;gt;&amp;lt;s|c|s&amp;gt;&amp;lt;digit&amp;gt;&amp;lt;digit&amp;gt;&amp;lt;digit&amp;gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;then role is student else it&#39;s faculty (other as well like clubs or administration people)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;there will also be an admin role who can maintain the website&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="2320" width="910" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-6" value="&lt;div&gt;Course&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;courseCode&lt;/div&gt;&lt;div&gt;courseCredit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-6" value="&lt;div&gt;Course&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;courseCode&lt;/div&gt;&lt;div&gt;courseCredit&lt;/div&gt;&lt;div&gt;courseDetails&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1340" y="230" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-7" value="&lt;div&gt;registeredCourse&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;courseId&lt;/div&gt;&lt;div&gt;userId&lt;/div&gt;&lt;div&gt;courseInstructure&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="230" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-9" value="&lt;div&gt;quiz&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;quizQns[qns]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="230" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-10" value="&lt;div&gt;qns&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;question&lt;/div&gt;&lt;div&gt;options[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ans&lt;/div&gt;&lt;div&gt;boolCorrect&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="230" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6K_ZOGJm7Vm8fiNNiEi8-12" value="&lt;div&gt;quizTaker&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;quizId&lt;/div&gt;&lt;div&gt;studentId&lt;/div&gt;&lt;div&gt;marks&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="230" width="190" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
