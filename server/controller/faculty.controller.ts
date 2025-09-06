@@ -19,6 +19,18 @@ const register = async (req: Request, res: Response) => {
       return ResponseApi(res, 400, 'Please provide all required fields');
     }
 
+    // Check if email ends with @iiitdwd.ac.in
+    if (!email.toLowerCase().endsWith('@iiitdwd.ac.in')) {
+      return ResponseApi(res, 400, 'Only @iiitdwd.ac.in email addresses are allowed');
+    }
+
+    // Prevent student ID format from registering as faculty
+    const emailPrefix = email.toLowerCase().split('@')[0];
+    const studentIdPattern = /^\d{2}[a-z]{3}\d{3}$/;
+    if (studentIdPattern.test(emailPrefix)) {
+      return ResponseApi(res, 400, 'Student ID format emails cannot register as faculty');
+    }
+
     if (password.length < 6 || password.length > 20) {
       return ResponseApi(
         res,

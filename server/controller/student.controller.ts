@@ -21,6 +21,18 @@ const register = async (req: Request, res: Response) => {
       return ResponseApi(res, 400, 'Please provide all required fields');
     }
 
+    // Check if email ends with @iiitdwd.ac.in
+    if (!email.toLowerCase().endsWith('@iiitdwd.ac.in')) {
+      return ResponseApi(res, 400, 'Only @iiitdwd.ac.in email addresses are allowed');
+    }
+
+    // Check if email follows student ID format: 2 numbers, 3 letters, 3 numbers
+    const emailPrefix = email.toLowerCase().split('@')[0];
+    const studentIdPattern = /^\d{2}[a-z]{3}\d{3}$/;
+    if (!studentIdPattern.test(emailPrefix)) {
+      return ResponseApi(res, 400, 'Student email must follow format: 2 digits + 3 letters + 3 digits (e.g., 23bec001@iiitdwd.ac.in)');
+    }
+
     if (password.length < 6 || password.length > 20) {
       return ResponseApi(
         res,

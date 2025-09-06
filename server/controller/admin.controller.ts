@@ -21,6 +21,11 @@ const register = async (req: Request, res: Response) => {
       return ResponseApi(res, 400, 'Please provide all required fields');
     }
 
+    // Check if email ends with @iiitdwd.ac.in
+    if (!email.toLowerCase().endsWith('@iiitdwd.ac.in')) {
+      return ResponseApi(res, 400, 'Only @iiitdwd.ac.in email addresses are allowed');
+    }
+
     if (password.length < 6 || password.length > 20) {
       return ResponseApi(
         res,
